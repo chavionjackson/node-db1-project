@@ -74,4 +74,94 @@ WHERE CustomerName = 'The Shire'
 
 -- (Stretch) Find a query to discover how many different cities are stored in the Customers table. Repeats should not be double counted
 
+SELECT DISTINCT city from Customers
+
+City
+Berlin
+México D.F.
+London
+Luleå
+Mannheim
+Strasbourg
+Madrid
+Marseille
+Tsawassen
+Buenos Aires
+Bern
+São Paulo
+Aachen
+Nantes
+Graz
+Lille
+Bräcke
+München
+Torino
+Lisboa
+Barcelona
+Sevilla
+Campinas
+Eugene
+Caracas
+Rio de Janeiro
+San Cristóbal
+Elgin
+Cork
+Cowes
+Brandenburg
+Versailles
+Toulouse
+Vancouver
+Walla Walla
+Frankfurt a.M.
+San Francisco
+Barquisimeto
+I. de Margarita
+Portland
+Bergamo
+Bruxelles
+Montréal
+Leipzig
+Anchorage
+Köln
+Paris
+Salzburg
+Cunewalde
+Albuquerque
+Reggio Emilia
+Genève
+Stavern
+Boise
+København
+Lander
+Charleroi
+Butte
+Münster
+Kirkland
+Århus
+Lyon
+Reims
+Stuttgart
+Oulu
+Resende
+Seattle
+Helsinki
+Walla
+null
+
 -- (Stretch) Find all suppliers who have names longer than 20 characters. You can use `length(SupplierName)` to get the length of the name
+
+SELECT * from suppliers
+WHERE length(SupplierName) > 20
+
+SupplierID	SupplierName	ContactName	Address	City	PostalCode	Country	Phone
+2	New Orleans Cajun Delights	Shelley Burke	P.O. Box 78934	New Orleans	70117	USA	(100) 555-4822
+3	Grandma Kelly's Homestead	Regina Murphy	707 Oxford Rd.	Ann Arbor	48104	USA	(313) 555-5735
+5	Cooperativa de Quesos 'Las Cabras'	Antonio del Valle Saavedra	Calle del Rosal 4	Oviedo	33007	Spain	(98) 598 76 54
+8	Specialty Biscuits, Ltd.	Peter Wilson	29 King's Way	Manchester	M14 GSD	UK	(161) 555-4448
+10	Refrescos Americanas LTDA	Carlos Diaz	Av. das Americanas 12.890	São Paulo	5442	Brazil	(11) 555 4640
+11	Heli Süßwaren GmbH & Co. KG	Petra Winkler	Tiergartenstraße 5	Berlin	10785	Germany	(010) 9984510
+12	Plutzer Lebensmittelgroßmärkte AG	Martin Bein	Bogenallee 51	Frankfurt	60439	Germany	(069) 992755
+13	Nord-Ost-Fisch Handelsgesellschaft mbH	Sven Petersen	Frahmredder 112a	Cuxhaven	27478	Germany	(04721) 8713
+14	Formaggi Fortini s.r.l.	Elio Rossi	Viale Dante, 75	Ravenna	48100	Italy	(0544) 60323
+18	Aux joyeux ecclésiastiques	Guylène Nodier	203, Rue des Francs-Bourgeois	Paris	75004	France	(1) 03.83.00.68
+19	New England Seafood Cannery	Robb Merchant	Order Processing Dept. 2100 Paul Revere Blvd.	Boston	02134	USA	(617) 555-3267
