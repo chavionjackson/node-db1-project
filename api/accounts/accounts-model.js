@@ -7,19 +7,26 @@ const getAll = () => {
 
 const getById = (id) => {
   // DO YOUR MAGIC
-  return db('accounts').where("id", id).first()
+  return db("accounts").where("id", id).first();
 };
 
 const create = (account) => {
   // DO YOUR MAGIC
+  return db("accounts")
+    .insert(account)
+    .then((acc) => {
+      return getById(acc[0]);
+    });
 };
 
 const updateById = (id, account) => {
   // DO YOUR MAGIC
+  return db("accounts").where("id", id).update(account);
 };
 
 const deleteById = (id) => {
   // DO YOUR MAGIC
+  return db('accounts').where("id", id).delete()
 };
 
 module.exports = {
